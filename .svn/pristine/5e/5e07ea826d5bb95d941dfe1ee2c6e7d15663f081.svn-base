@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	<display-name>GtDemo</display-name>
+	<servlet>
+		<servlet-name>VerifyLoginServlet</servlet-name>
+		<servlet-class>com.geetest.sdk.java.web.demo.VerifyLoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>StartCaptchaServlet</servlet-name>
+		<servlet-class>com.geetest.sdk.java.web.demo.StartCaptchaServlet</servlet-class>
+	</servlet>
+	<servlet>  
+		<servlet-name>MobileStartCaptchaServlet</servlet-name>
+		<servlet-class>com.geetest.sdk.java.web.mobiledemo.StartCaptchaServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MobileVerifyLoginServlet</servlet-name>
+		<servlet-class>com.geetest.sdk.java.web.mobiledemo.VerifyLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>VerifyLoginServlet</servlet-name>
+		<url-pattern>/pc-geetest/validate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StartCaptchaServlet</servlet-name>
+		<url-pattern>/pc-geetest/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MobileVerifyLoginServlet</servlet-name>
+		<url-pattern>/mobile-geetest/validate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MobileStartCaptchaServlet</servlet-name>
+		<url-pattern>/mobile-geetest/register</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

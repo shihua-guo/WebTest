@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link type="text/css" href="css/css.css" rel="stylesheet">
+</head>
+<body>
+	<table id="wrapTable" border="1">
+		<tr>
+			<th>
+				<p>this is a paragrah</p>
+			</th>
+			<th rowspan="2">this <br /> contians a table
+				<table border="1">
+					<tr>
+						<th>A</th>
+						<th>B</th>
+					</tr>
+					<tr>
+						<th>C</th>
+						<th>D</th>
+					</tr>
+				</table>
+			</th>
+
+		</tr>
+		<tr>
+			<td style="text-align: top, left">briup</td>
+		</tr>
+		<tr>
+			<td>fjdskfh'jkd</td>
+			<td>hello <br> world <br> iahgnahs
+				<table border="1">
+					<tr>
+						<th colspan="2">2010-9-9</th>
+					</tr>
+					<tr>
+						<th>2010-9-10</th>
+						<th>$2000</th>
+					</tr>
+
+				</table> <br>
+			</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>
